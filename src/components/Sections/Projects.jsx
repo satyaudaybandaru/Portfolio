@@ -25,8 +25,26 @@ const Projects = () => {
                                     <FolderOpen size={24} />
                                 </div>
                                 <div className="flex gap-3">
-                                    <a href="#" className="p-2 hover:bg-white/10 rounded-full transition-colors text-gray-400 hover:text-white"><Github size={20} /></a>
-                                    <a href="#" className="p-2 hover:bg-white/10 rounded-full transition-colors text-gray-400 hover:text-white"><ExternalLink size={20} /></a>
+                                    {project.github && (
+                                        <a
+                                            href={project.github}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 hover:bg-white/10 rounded-full transition-colors text-gray-400 hover:text-white"
+                                        >
+                                            <Github size={20} />
+                                        </a>
+                                    )}
+                                    {project.link && (
+                                        <a
+                                            href={project.link}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="p-2 hover:bg-white/10 rounded-full transition-colors text-gray-400 hover:text-white"
+                                        >
+                                            <ExternalLink size={20} />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 

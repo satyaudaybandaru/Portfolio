@@ -61,28 +61,32 @@ export const education = [
 
 export const projects = [
     {
-        title: "Computer Retail & Support Online Platform",
-        tech: ["React", "Bootstrap", "FastAPI", "MongoDB", "Google Cloud"],
-        description: "Developed and deployed a full-stack web application. Automated CI/CD via GitHub Cloud Build and hosted on Google Cloud Run.",
-        category: "Full Stack"
-    },
-    {
         title: "RAG Based Document Helper",
         tech: ["Python", "LangChain", "Gemini", "FAISS", "FastAPI", "React"],
         description: "GenAI-powered document assistant delivering real-time answers from user-uploaded PDFs with session persistence.",
-        category: "Generative AI"
+        category: "Generative AI",
+        github: "https://github.com/satyaudaybandaru/RAG-based-QA-webapp"
     },
     {
         title: "Telugu Answer Evaluation System",
         tech: ["Python", "Scikit-learn", "NLP", "Naive Bayes"],
         description: "Automated answer sheet evaluation system for Telugu language using cosine similarity and NER.",
-        category: "NLP"
+        category: "NLP",
+        github: "https://github.com/satyaudaybandaru/Automated-Paper-Correction-for-Telugu"
     },
     {
         title: "Tata Sales Data Visualization",
         tech: ["Python", "Pandas", "Matplotlib", "Seaborn", "Plotly"],
         description: "Interactive dashboard visualizing key insights from manually processed sales datasets.",
-        category: "Data Analysis"
+        category: "Data Analysis",
+        link: "https://1drv.ms/b/c/1ca6e4df796325b6/IQC2JWN53-SmIIAcTiQAAAAAAUZGQDtQfBGpoclgF_WJfcQ?e=aYae4q"
+    },
+    {
+        title: "Computer Retail & Support Online Platform",
+        tech: ["React", "Bootstrap", "FastAPI", "MongoDB", "Google Cloud"],
+        description: "Developed and deployed a full-stack web application. Automated CI/CD via GitHub Cloud Build and hosted on Google Cloud Run.",
+        category: "Full Stack",
+        link: "#"
     },
     {
         title: "Animal Species Classification",
@@ -96,11 +100,13 @@ export const certifications = [
     {
         name: "Machine Learning in Production",
         issuer: "DeepLearning.AI (Coursera)",
-        date: "January 2026"
+        date: "January 2026",
+        link: "https://coursera.org/share/04329cd257a89bc08749831b6069bd3b"
     },
     {
         name: "Introduction to AI and Machine Learning on Google Cloud",
         issuer: "Google Cloud (Coursera)",
-        date: "September 2025"
+        date: "September 2025",
+        link: "https://coursera.org/share/0dc8057283e995b489d131f5eac324ac"
     }
 ];
