@@ -2,7 +2,7 @@ import Section from '../ui/Section';
 import { experience, education, certifications } from '../../data/portfolioData';
 import { Briefcase, GraduationCap, Award, ExternalLink } from 'lucide-react';
 
-const CardItem = ({ title, subtitle, date, description, icon: Icon, link }) => {
+const CardItem = ({ title, subtitle, date, description, icon: Icon, link }) => { // eslint-disable-line no-unused-vars
     const Component = link ? 'a' : 'div';
     const props = link ? { href: link, target: '_blank', rel: 'noopener noreferrer' } : {};
 

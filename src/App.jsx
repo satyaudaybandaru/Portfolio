@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import Navbar from './components/Layout/Navbar';
 import Hero from './components/Sections/Hero';
 import Skills from './components/Sections/Skills';
