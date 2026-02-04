@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background (Optional, or just transparent) -->
+  <circle cx="50" cy="50" r="45" fill="#0a0a0a" stroke="url(#grad)" stroke-width="4" />
+
+  <!-- Neural Nodes -->
+  <circle cx="50" cy="30" r="6" fill="#06b6d4" />
+  <circle cx="30" cy="65" r="6" fill="#3b82f6" />
+  <circle cx="70" cy="65" r="6" fill="#8b5cf6" />
+  
+  <!-- Connections -->
+  <line x1="50" y1="30" x2="30" y2="65" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  <line x1="50" y1="30" x2="70" y2="65" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  <line x1="30" y1="65" x2="70" y2="65" stroke="white" stroke-width="3" stroke-linecap="round" opacity="0.8" />
+  
+  <!-- Central Pulse -->
+  <circle cx="50" cy="53" r="3" fill="white" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite" />
+  </circle>
+</svg>
