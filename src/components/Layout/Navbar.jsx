@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Terminal className="text-primary w-6 h-6" />
                     </div>
                     <span className="font-mono font-bold text-xl tracking-tighter">
-                        Satya<span className="text-primary">.AI</span>
+                        Aspiring<span className="text-amber-50"> AI Engineer</span>
                     </span>
                 </a>
 

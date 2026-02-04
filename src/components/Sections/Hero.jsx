@@ -2,12 +2,13 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download, Github, Linkedin, Mail } from 'lucide-react';
 import { profile } from '../../data/portfolioData';
 
+import ParticleBackground from '../ui/ParticleBackground';
+
 const Hero = () => {
     return (
         <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
             {/* Background Elements */}
-            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse" />
-            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-purple/10 rounded-full blur-3xl -z-10" />
+            <ParticleBackground />
 
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -37,7 +38,9 @@ const Hero = () => {
                         View Projects <ArrowRight size={20} />
                     </a>
                     <a
-                        href="/resume.pdf"
+                        href={profile.resume}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="px-8 py-3 border border-white/20 hover:border-white/40 hover:bg-white/5 rounded-lg font-medium transition-all flex items-center gap-2"
                     >
                         Resume <Download size={20} />

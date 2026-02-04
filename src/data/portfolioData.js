@@ -16,7 +16,8 @@ export const profile = {
         linkedin: "https://linkedin.com/in/satyaudaybandaru",
         github: "https://github.com/satyaudaybandaru",
         phone: "+91 7036624356"
-    }
+    },
+    resume: "https://drive.google.com/file/d/1vZT-DCgADjNec6frHo37zxDGT-S4124X/view?usp=sharing"
 };
 
 export const skills = [
