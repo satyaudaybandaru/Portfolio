@@ -18,7 +18,7 @@ const Hero = () => {
             >
                 <h1 className="font-bold mb-6 leading-tight">
                     <div className="flex flex-wrap items-center justify-center gap-4">
-                        <span className="text-6xl md:text-7xl pb-2 text-white">
+                        <span className="text-5xl md:text-5xl lg:text-7xl pb-2 text-white">
                             {profile.name.split(' ').slice(0, -2).join(' ')} <span className="text-gradient">{profile.name.split(' ').slice(-2).join(' ')}</span>
                         </span>
                         <div className="inline-block px-3 py-1 rounded-full border border-primary/30 bg-primary/10 text-primary text-sm font-medium self-center mt-2 md:mt-0">
