@@ -61,6 +61,13 @@ export const education = [
 
 export const projects = [
     {
+        title: "Talk Bridge",
+        tech: ["React Native", "Native Wind", "Python", "FastAPI", "Sarvam AI Integration"],
+        description: "Talk Bridge aimed to be a real-time voice translation app built for travelers in India. Speak in your language and instantly hear it translated into the local language, making conversations smooth and stress-free. Think of it as a real-life version of Doraemon’s Translation Jelly, powered by modern AI.",
+        category: "Generative AI",
+        github: "https://github.com/satyaudaybandaru/Talk-Bridge.git"
+    },
+    {
         title: "RAG Based Document Helper",
         tech: ["Python", "LangChain", "Gemini", "FAISS", "FastAPI", "React"],
         description: "GenAI-powered document assistant delivering real-time answers from user-uploaded PDFs with session persistence.",
