@@ -15,9 +15,9 @@ export const profile = {
     social: {
         linkedin: "https://linkedin.com/in/satyaudaybandaru",
         github: "https://github.com/satyaudaybandaru",
-        phone: "+91 7036624356"
+        phone: "+91 8985624356"
     },
-    resume: "https://drive.google.com/file/d/1vZT-DCgADjNec6frHo37zxDGT-S4124X/view?usp=sharing"
+    resume: "https://drive.google.com/file/d/1X2cv2VFd95wiWNNs5YjrRqmin_8RMHdx/view?usp=drive_link"
 };
 
 export const skills = [
@@ -60,6 +60,13 @@ export const education = [
 ];
 
 export const projects = [
+    {
+        title: "Gemma 3 Tool-Calling Fine-Tuning",
+        tech: ["Transformers", "Unsloth", "PEFT", "LoRA", "Hugging Face", "Python"],
+        description: "Fine-tuned Gemma 3 4B for native Function Calling using Unsloth. Built a custom chat template and a 2-stage fine-tuning pipeline. Trained entirely on the Google Colab Free Tier and developed an evaluation framework, achieving 90% JSON validity while evaluating tool selection, tool formatting, and checkpoint performance.",
+        category: "Generative AI",
+        github: "https://github.com/satyaudaybandaru/Gemma-3-4B-FunctionCall.git"
+    },
     {
         title: "Talk Bridge",
         tech: ["React Native", "Native Wind", "Python", "FastAPI", "Sarvam AI Integration"],
