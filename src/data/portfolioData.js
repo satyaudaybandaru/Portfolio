@@ -76,7 +76,8 @@ export const projects = [
         tech: ["Transformers", "Unsloth", "PEFT", "LoRA", "Hugging Face", "Python"],
         description: "Fine-tuned Gemma 3 4B for native Function Calling using Unsloth. Built a custom chat template and a 2-stage fine-tuning pipeline. Trained entirely on the Google Colab Free Tier and developed an evaluation framework, achieving 90% JSON validity while evaluating tool selection, tool formatting, and checkpoint performance.",
         category: "Generative AI",
-        github: "https://github.com/satyaudaybandaru/Gemma-3-4B-FunctionCall.git"
+        github: "https://github.com/satyaudaybandaru/Gemma-3-4B-FunctionCall.git",
+        huggingface: "https://huggingface.co/SatyaUdayB/gemma-3-4b-FC"
     },
     {
         title: "Talk Bridge",
