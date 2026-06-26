@@ -48,7 +48,18 @@ export const skills = [
     }
 ];
 
-export const experience = [];
+export const experience = [
+    {
+        role: "Project Associate (Computer Vision)",
+        company: "C-DAC, Chennai",
+        companyDetail: "Ministry of Electronics and Information Technology, Government of India",
+        period: "Feb 2026 - Apr 2026",
+        highlights: [
+            "Optimized EfficientNet-B0 deployment by benchmarking TensorRT, OpenVINO, PyTorch, and LiteRT.",
+            "Built PyTorch → ONNX → TensorRT pipelines and evaluated FP32/FP16/INT8 quantization, achieving 43% model size reduction while maintaining 82.7% Top-1 accuracy."
+        ]
+    }
+];
 
 export const education = [
     {

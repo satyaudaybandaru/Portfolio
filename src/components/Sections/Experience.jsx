@@ -1,15 +1,15 @@
 import Section from '../ui/Section';
-import { experience, education, certifications } from '../../data/portfolioData';
-import { Briefcase, GraduationCap, Award, ExternalLink } from 'lucide-react';
+import { experience, education } from '../../data/portfolioData';
+import { Briefcase, GraduationCap, ExternalLink } from 'lucide-react';
 
-const CardItem = ({ title, subtitle, date, description, icon: Icon, link }) => { // eslint-disable-line no-unused-vars
+const CardItem = ({ title, subtitle, date, description, icon: Icon, link, className = '' }) => { // eslint-disable-line no-unused-vars
     const Component = link ? 'a' : 'div';
     const props = link ? { href: link, target: '_blank', rel: 'noopener noreferrer' } : {};
 
     return (
         <Component
             {...props}
-            className={`p-6 rounded-2xl glass border-white/5 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 group h-full flex flex-col ${link ? 'cursor-pointer' : ''}`}
+            className={`p-6 rounded-2xl glass border-white/5 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 group h-full flex flex-col ${link ? 'cursor-pointer' : ''} ${className}`}
         >
             <div className="flex justify-between items-start mb-4">
                 <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
@@ -40,16 +40,40 @@ const Experience = () => {
             </div>
 
             <div className="grid md:grid-cols-2 gap-6">
-                {/* Experience - Only render if not empty (it's empty now per request to move) */}
-                {experience.map((job) => (
-                    <CardItem
-                        key={job.id}
-                        title={job.role}
-                        subtitle={job.company}
-                        date={job.period}
-                        description={job.description}
-                        icon={Briefcase}
-                    />
+                {/* Experience */}
+                {experience.map((job, idx) => (
+                    <div
+                        key={`exp-${idx}`}
+                        className="p-6 rounded-2xl glass border-white/5 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5 group h-full flex flex-col md:col-span-2"
+                    >
+                        <div className="flex justify-between items-start mb-4">
+                            <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                                <Briefcase size={24} />
+                            </div>
+                            <span className="px-3 py-1 text-sm rounded-full bg-white/5 text-primary-cyan border border-white/5">
+                                {job.period}
+                            </span>
+                        </div>
+
+                        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-cyan transition-colors">
+                            {job.role}
+                        </h3>
+                        <p className="text-gray-400 font-medium">{job.company}</p>
+                        {job.companyDetail && (
+                            <p className="text-gray-500 text-sm mb-3">{job.companyDetail}</p>
+                        )}
+
+                        {job.highlights && job.highlights.length > 0 && (
+                            <ul className="mt-3 space-y-2 text-gray-400 text-sm leading-relaxed list-none">
+                                {job.highlights.map((point, i) => (
+                                    <li key={i} className="flex items-start gap-2">
+                                        <span className="text-primary mt-1 shrink-0">▹</span>
+                                        <span>{point}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
                 ))}
 
                 {/* Education */}
@@ -61,19 +85,7 @@ const Experience = () => {
                         date={edu.period}
                         description={`Score: ${edu.score}`}
                         icon={GraduationCap}
-                    />
-                ))}
-
-                {/* Certifications */}
-                {certifications.map((cert, idx) => (
-                    <CardItem
-                        key={`cert-${idx}`}
-                        title={cert.name}
-                        subtitle={cert.issuer}
-                        date={cert.date}
-                        description=""
-                        icon={Award}
-                        link={cert.link}
+                        className="md:col-span-2"
                     />
                 ))}
             </div>

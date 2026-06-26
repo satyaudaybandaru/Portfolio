@@ -4,6 +4,7 @@ import Hero from './components/Sections/Hero';
 import Skills from './components/Sections/Skills';
 import Experience from './components/Sections/Experience';
 import Projects from './components/Sections/Projects';
+import Certifications from './components/Sections/Certifications';
 import Contact from './components/Sections/Contact';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Skills />
         <Experience />
         <Projects />
+        <Certifications />
         <Contact />
       </main>
       <footer className="py-6 text-center text-gray-400 text-sm glass mt-20">
