@@ -28,7 +28,7 @@ export const skills = [
     },
     {
         category: "AI & ML Frameworks",
-        items: ["PyTorch", "TensorFlow", "Scikit-learn", "LangChain", "Pandas", "Gemini API"],
+        items: ["PyTorch", "Transformers", "LangChain", "Scikit-learn", "Pandas", "Gemini API"],
         icon: Brain
     },
     {
@@ -43,7 +43,7 @@ export const skills = [
     },
     {
         category: "Cloud & Platforms",
-        items: ["Google Cloud (Compute Engine, Cloud Run)", "Linux", "Windows"],
+        items: ["AWS", "Google Cloud (Compute Engine, Cloud Run)", "Linux", "Windows"],
         icon: Cloud
     }
 ];
